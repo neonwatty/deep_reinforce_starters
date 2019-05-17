@@ -327,6 +327,9 @@ class QLearner():
                               
             # print out updates 
             print (update)
+            
+            # record rewards
+            update = str(total_episode_reward) + '\n'
             self.update_log(self.reward_logname,update)
             
             # save latest weights from this episode 

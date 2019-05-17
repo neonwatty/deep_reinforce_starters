@@ -21,6 +21,8 @@ def plot_reward_history(logname,**kwargs):
     # load in total episode reward history
     data = np.loadtxt(logname)
     ave = moving_average(data,window_length)
+    print(data.shape)
+    print(ave.shape)
 
     # create figure
     fig = plt.figure(figsize = (12,8))
