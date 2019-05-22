@@ -7,4 +7,3 @@ for importer, modname, ispkg in pkgutil.walk_packages(
         prefix=__name__+'.',
         onerror=(lambda x: None)):
     __import__(modname)
-  
